@@ -1,0 +1,22 @@
+{
+  "name": "basic-dnd-character",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkrayer/basic-dnd-character.git"
+  },
+  "author": "Jim Krayer <jameskrayer@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkrayer/basic-dnd-character/issues"
+  },
+  "homepage": "https://github.com/jkrayer/basic-dnd-character#readme"
+}
