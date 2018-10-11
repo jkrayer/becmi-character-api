@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/jkrayer/basic-dnd-character/issues"
   },
-  "homepage": "https://github.com/jkrayer/basic-dnd-character#readme"
+  "homepage": "https://github.com/jkrayer/basic-dnd-character#readme",
+  "dependencies": {
+    "ramda": "0.25.0"
+  }
 }
