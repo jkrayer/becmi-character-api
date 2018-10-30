@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -c -R list --recursive \"./tests/*.js\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "homepage": "https://github.com/jkrayer/basic-dnd-character#readme",
   "dependencies": {
     "ramda": "0.25.0"
+  },
+  "devDependencies": {
+    "mocha": "5.2.0"
   }
 }

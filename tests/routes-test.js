@@ -3,10 +3,14 @@ const mocha = require('mocha');
 
 const routes = require('../lib/routes');
 
-  function callback(...a) {
-    return a;
-  }
+function callback(...a) {
+  return a;
+}
 
   // notFound
-  const { notFound } = routes;
-  assert.deepStrictEqual(notFound(undefined, null), [{message: 'The path you requested can not be found.'}, 404]);
+  describe('notFound', () => {
+    it('should return an error message and a 404 code', () => {
+      const { notFound } = routes;
+      assert.deepStrictEqual(notFound(undefined, callback), [{message: 'The path you requested can not be found.'}, 404]);
+    });
+  });
