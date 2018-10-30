@@ -1,7 +1,7 @@
 const assert = require('assert');
 const mocha = require('mocha');
 
-const contracts = require('../lib/contracts');
+const contracts = require('../lib/helpers/contracts');
 
   // isObject
   describe('isObject', () => {

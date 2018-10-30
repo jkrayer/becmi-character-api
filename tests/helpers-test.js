@@ -1,7 +1,7 @@
 const assert = require('assert');
 const mocha = require('mocha');
 
-const helpers = require('../lib/helpers');
+const helpers = require('../lib/helpers/helpers');
 
   // xpAdjustMent
   describe('xpAdjustMent', () => {
