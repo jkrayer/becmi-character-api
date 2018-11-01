@@ -1,5 +1,6 @@
+const config = require('./config');
 const { init } = require('./lib/server');
 
-init();
+init(config);
 
 module.exports = init;
