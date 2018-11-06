@@ -30,13 +30,38 @@ describe('getArmorIds', () => {
 describe('getClassName', () => {
   const { getClassName } = lenses;
 
-  it('should  retyrn undefined when the className is not available', () => {
+  it('should return undefined when the className is not available', () => {
     assert.strictEqual(getClassName({}), undefined);
     assert.strictEqual(getClassName([]), undefined);
     assert.strictEqual(getClassName({ classname: 'Fighter' }), undefined);
     assert.strictEqual(getClassName({a: {className: 'Thief'}}), undefined);
   });
 });
+
+// getHttpPort
+describe('getHttpPort', () => {
+  const { getHttpPort } = lenses;
+
+  it('should return the value of httpPort on the provided object', () => {
+    assert.strictEqual(getHttpPort({ httpPort: 1}), 1);
+    assert.strictEqual(getHttpPort({ httpPort: null}), null);
+    assert.strictEqual(getHttpPort({ httpPort: 'string'}), 'string');
+    assert.strictEqual(getHttpPort({}), undefined);
+  });
+});
+
+// getHttpsPort
+describe('getHttpsPort', () => {
+  const { getHttpsPort } = lenses;
+
+  it('should return the value of httpsPort on the provided object', () => {
+    assert.strictEqual(getHttpsPort({ httpsPort: 123}), 123);
+    assert.strictEqual(getHttpsPort({ httpsPort: null}), null);
+    assert.strictEqual(getHttpsPort({ httpsPort: 'a string'}), 'a string');
+    assert.strictEqual(getHttpsPort({}), undefined);
+  });
+});
+
 
 // getQuery
 describe('getQuery', () => {
