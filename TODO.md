@@ -1,4 +1,2 @@
- * Memoize responses
- * take scores as ?scores=#|#|#|#|#|# -> merge with SIWDCC
- * make lib/server more "functional"
- * Add leveling up
+ * make lib/server more "functional" (low priority)
+ * Add leveling up (low priority, build UI first)
