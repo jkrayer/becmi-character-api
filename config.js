@@ -7,7 +7,7 @@ const environmentVariables = {
   production: {
     httpPort: 80,
     httpsPort: 80,
-    hostname: 'becmi-api.herokuapp.com'
+    hostname: '72.79.22.130'
   }
 };
 
