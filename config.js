@@ -1,12 +1,12 @@
 const environmentVariables = {
   development: {
-    httpPort: process.env.PORT || 3000,
-    httpsPort: process.env.PORT || 3001,
+    httpPort: process.env.PORT || '3000',
+    httpsPort: process.env.PORT || '3001',
     hostname: '127.0.0.1'
   },
   production: {
-    httpPort: 80,
-    httpsPort: 80,
+    httpPort: process.env.PORT || '80',
+    httpsPort: process.env.PORT || '80',
     hostname: '72.79.22.130'
   }
 };
