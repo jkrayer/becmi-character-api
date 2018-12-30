@@ -5,8 +5,8 @@ const environmentVariables = {
     hostname: '127.0.0.1'
   },
   production: {
-    httpPort: process.env.PORT || 80,
-    httpsPort: process.env.PORT || 80,
+    httpPort: 80,
+    httpsPort: 80,
     hostname: 'becmi-api.herokuapp.com'
   }
 };
