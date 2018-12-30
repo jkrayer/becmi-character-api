@@ -1,13 +1,13 @@
 const environmentVariables = {
   development: {
-    httpPort: 3000,
-    // httpsPort: 3001,
-    hostname: '127.0.0.1',
-    root: 'http://localhost:3000/'
+    httpPort: process.env.PORT || 3000,
+    httpsPort: process.env.PORT || 3001,
+    hostname: '127.0.0.1'
   },
   production: {
-    httpPort: 80,
-    httpsPort: 443
+    httpPort: process.env.PORT || 80,
+    httpsPort: process.env.PORT || 80,
+    hostname: 'becmi-api.herokuapp.com'
   }
 };
 
