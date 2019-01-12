@@ -2,6 +2,7 @@ const assert = require('assert');
 const mocha = require('mocha');
 
 const { get } = require('../lib/controllers/equipment');
+const data = require('../lib/data/equipment');
 
 function callback(...a) {
   return a;
@@ -40,5 +41,15 @@ describe('get', () => {
 
     assert.deepStrictEqual(allowedWeaponNames, ['Dagger', 'Silver Dagger']);
     assert.deepStrictEqual(result[0].data.armor, []);
+  });
+});
+
+describe('get', () => {
+  it('should return all weapons, armor and equipment', () => {
+    const result = get({query: {}}, callback);
+
+    assert.strictEqual(result[0].data.armor.length, data.armor.length);
+    assert.strictEqual(result[0].data.weapons.length, data.weapons.length);
+    assert.strictEqual(result[0].data.equipment.length, data.equipment.length);
   });
 });
